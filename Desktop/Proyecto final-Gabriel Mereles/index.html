@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content container">
+            <nav class="navigation">
+                <a href="/">
+                    <p class="logotipo">Shopping<span>Cart</span></p>
+                </a>
+
+                <div class="btn-cart">
+                    <button type="button"><i class="fa-solid fa-cart-shopping icon-cart"></i></button>
+                    <span id="cartCount">0</span>
+
+                    <div class="cart">
+                        <div class="cart-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Description</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="contentProducts">
+                                    <tr>
+                                        <td><img src="/assets/img/products/product-01.jpg" alt=""></td>
+                                        <td>
+                                            Lorem ipsum dolor sit.
+                                        </td>
+                                        <td>$15</td>
+                                        <td>
+                                            <input type="number" min="1">
+                                        </td>
+                                        <td>
+                                            <button type="button">X</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="5" class="total">
+                                            <h4 class="heading-total">Total: <span id="total"></span></h4>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5">
+                                            <button type="button" id="emptyCart">Empty Cart</button>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </nav>
+        </div>
+
+        <form class="form-header">
+            <input type="search" name="search" placeholder="Search...">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass icon-glass"></i></button>
+        </form>
+    </header>
+
+    <section class="banner">
+        <div class="banner-grid container">
+            <div class="banner-item">
+                <i class="fa-regular fa-lightbulb icon-banner"></i>
+                <h3>Bright Ideas, Precise Choices, Timely Deals</h3>
+            </div>
+            <div class="banner-item">
+                <i class="fa-solid fa-bullseye icon-banner"></i>
+                <h3>Innovation, Focus, and Speed: Get It All Here!</h3>
+            </div>
+            <div class="banner-item">
+                <i class="fa-regular fa-clock icon-banner"></i>
+                <h3>Smart Tech, Targeted Solutions, Just in Time!</h3>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="products" id="listProducts">
+            <h2>Productos</h2>
+            <div class="products-grid container">
+                <div class="product">
+                    <img src="/assets/img/products/product-01.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Teclado Mecánico</h4>
+                        <p class="product-text">Teclado Mecánico Gamer RGB, con switches intercambiables y piezas de repuesto</p>
+
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$18.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="1">Añadir al Carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-02.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Airpods</h4>
+                        <p class="product-text">Auriculares inalámbricos Bluetooth marca Iphone</p>
+
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$18.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="2">Añadir al Carrito </button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-03.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Mouse</h4>
+                        <p class="product-text">Mouse gamer con botones laterales</p>
+
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$18.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="3">Añadir al Carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-04.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Reloj</h4>
+                        <p class="product-text"> Reloj marca Cassio color negro, en versiones de aguja y digitales</p>
+
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$18.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="4">Añadir al Carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-05.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Router</h4>
+                        <p class="product-text">Router aparato de conexión wifi</p>
+
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$18.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="5">Añadir al Carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-06.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>PC</h4>
+                        <p class="product-text">PC Gamer ya armada lista para entregar con gabinete incluido</p>
+
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$18.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="6">Añadir al Carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-07.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Notebook</h4>
+                        <p class="product-text">Notebook con 1TB de memoria interna y 16GB de RAM</p>
+
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$18.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="7">Añadir al Carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-08.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>USB</h4>
+                        <p class="product-text">Memoria USB portátil con capacidad de 20 GB de RAM</p>
+
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$18.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="8">Añadir al Carrito</button>
+                    </div>
+                </div><!--.product-->
+                <div class="product">
+                    <img src="/assets/img/products/product-09.jpg" alt="image product">
+                    <div class="product-info">
+                        <h4>Batería portátil</h4>
+                        <p class="product-text">Batería portátil, con duración de hasta 4 cargas completas.</p>
+
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+                        <i class="fa-solid fa-star icon-star"></i>
+
+                        <div class="price">
+                            <span>$35.00</span>
+                            <p id="currentPrice">$18.00</p>
+                        </div>
+                        <button class="btn-add" type="button" data-id="9">Añadir al Carrito</button>
+                    </div>
+                </div><!--.product-->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;2024 ShoppingCart. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="/assets/plugins/fontawesome/js/all.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>
