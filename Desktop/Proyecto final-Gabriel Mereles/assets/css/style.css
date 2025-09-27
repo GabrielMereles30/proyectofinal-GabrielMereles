@@ -385,7 +385,7 @@ img {
 }
 
 .alert {
-     position: fixed;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -398,14 +398,15 @@ img {
     opacity: 0;
     animation: fadeInOut 5s ease forwards;
     font-size: 2rem;
+    
 
-    &.error {
+    &.error{
         background-color: #f44336;
         color: #fff;
     } 
     
-    &.success {
-        background-color: #4caf50;
+    &.succes{
+        background-color: #71e102;
         color: #fff;
     }
 
